@@ -289,7 +289,6 @@ function BlockFormatDropDown({
             const textContent = selection.getTextContent();
             const codeNode = $createCodeNode();
             selection.insertNodes([codeNode]);
-            selection = $getSelection();
             if ($isRangeSelection(selection))
               selection.insertRawText(textContent);
           }
